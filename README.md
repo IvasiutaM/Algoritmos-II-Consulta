@@ -12,4 +12,4 @@ Repositorio destinado para guiar a los estudiantes que cursan la materia de Algo
 - Hashing
 - Grafos
 
-> El repositorio no reemplaza las clases de la cátedra
+> Este repositorio está pensado como material complementario a las clases y recursos oficiales de la cátedra
