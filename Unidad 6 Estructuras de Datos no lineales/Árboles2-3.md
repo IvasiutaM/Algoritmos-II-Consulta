@@ -1,8 +1,8 @@
 # Árboles 2-3
 
-Secuencia de ejemplo: 12, 24, 50, 35, 90, 89, 100, 1, 0, 14, 7, 6, 40, 70, 55
+**Secuencia de ejemplo:** 12, 24, 50, 35, 90, 89, 100, 1, 0, 14, 7, 6, 40, 70, 55
 
-Vamos a ir paso a paso. Primero vamos a insertar el primer número de la secuencia (en este caso 12). Aclaración: vamos a ponerle etiquetas a los nodos con el fin de guiarnos
+Vamos a ir paso a paso. Primero vamos a insertar el primer número de la secuencia (en este caso 12). **Aclaración:** vamos a ponerle etiquetas a los nodos con el fin de guiarnos
 
 ```mermaid
 graph TD
