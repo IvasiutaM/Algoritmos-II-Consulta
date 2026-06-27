@@ -2,31 +2,31 @@
 
 Secuencia de ejemplo: 12, 24, 50, 35, 90, 89, 100, 1, 0, 14, 7, 6, 40, 70, 55
 
-Vamos a ir paso a paso. Primero vamos a insertar el primer número de la secuencia (en este caso 12)
+Vamos a ir paso a paso. Primero vamos a insertar el primer número de la secuencia (en este caso 12). Aclaración: vamos a ponerle etiquetas a los nodos con el fin de guiarnos
 
 ```mermaid
 graph TD
-    A["[12 | ]"]
+    A["A[12 | ]"]
 ```
 
 Ahora insertamos el 24. Como es mayor al 12, lo insertamos a su derecha
 ```mermaid
 graph TD
-    A["[ 12 | 24 ]"]
+    A["A[ 12 | 24 ]"]
 ```
 Insertamos el 50. Como vemos, el nodo está lleno. Al intentar insertar el 50 se genera una partición. El 50 va a la derecha del 24 ya que es mayor a dicho número. Siempre que se genera una partición, sube el número del medio (eso es importante, en árbol 2-3 los nodos suben **nunca bajan**)
 
 ```mermaid
 graph TD
-    A["[ 12 | 24 ] (50) ←"]
+    A["A[ 12 | 24 ] (50) ←"]
 ```
 
 Entonces:
 ```mermaid
 graph TD
-    A["[  | 24 ] "]
-    B["[ 12 |  ]"]
-    C["[ 50 |  ]"]
+    A["A[  | 24 ] "]
+    B["B[ 12 |  ]"]
+    C["C[ 50 |  ]"]
 
     A --> B
     A --> C
@@ -35,9 +35,9 @@ graph TD
 Ahora insertamos el 35. Como es mayor que 24 y hay espacio en el nodo donde se ubica el 50, se colocará en dicho nodo
 ```mermaid
 graph TD
-    A["[  | 24 ] "]
-    B["[ 12 |  ]"]
-    C["[ 35 | 50 ]"]
+    A["A[  | 24 ] "]
+    B["B[ 12 |  ]"]
+    C["C[ 35 | 50 ]"]
 
     A --> B
     A --> C
@@ -46,9 +46,9 @@ Insertamos el 90. Daado que el nodo donde se encuenta el 35 y 50 está lleno, su
 
 ```mermaid
 graph TD
-    A["[  | 24 ] "]
-    B["[ 12 |  ]"]
-    C["[ 35 | 50 ] (90) ←"]
+    A["A[  | 24 ] "]
+    B["B[ 12 |  ]"]
+    C["C[ 35 | 50 ] (90) ←"]
 
     A --> B
     A --> C
@@ -57,10 +57,10 @@ graph TD
 El número 50 sube, y como hay espacio en el nodo de arriba, se pone junto al 24
 ```mermaid
 graph TD
-    A["[ 24 | 50 ]"]
-    B["[ 12 |  ]"]
-    C["[ 35 |  ]"]
-    D["[ |90 ]"]
+    A["A[ 24 | 50 ]"]
+    B["B[ 12 |  ]"]
+    C["C[ 35 |  ]"]
+    D["D[ |90 ]"]
 
     A --> B
     A --> C
@@ -76,10 +76,10 @@ Ahora insertamos el 89 siguiendo la misma lógica
 
 ```mermaid
 graph TD
-    A["[ 24 | 50 ]"]
-    B["[ 12 |  ]"]
-    C["[ 35 |  ]"]
-    D["[ 89 |90 ]"]
+    A["A[ 24 | 50 ]"]
+    B["B[ 12 |  ]"]
+    C["C[ 35 |  ]"]
+    D["D[ 89 |90 ]"]
 
     A --> B
     A --> C
@@ -88,10 +88,10 @@ graph TD
 Insertamos el 100.
 ```mermaid
 graph TD
-    A["[ 24 | 50 ]"]
-    B["[ 12 |  ]"]
-    C["[ 35 |  ]"]
-    D["[ 89 |90 ] (100)←"]
+    A["A[ 24 | 50 ]"]
+    B["B[ 12 |  ]"]
+    C["C[ 35 |  ]"]
+    D["D[ 89 |90 ] (100)←"]
 
     A --> B
     A --> C
@@ -102,13 +102,13 @@ Si se analizan los nodos, nos podemos percatar que van a ocurrir dos particiones
 ¿Cómo quedaría?
 ```mermaid
 graph TD
-    A["[  | 50 ]"]
-    B["[ 24 |  ]"]
-    C["[  | 90 ]"]
-    D["[ 12 |  ]"]
-    E["[ 35 |  ]"]
-    F["[ 89 | ] "]
-    G["[  | 100 ]"]
+    A["A[  | 50 ]"]
+    B["B[ 24 |  ]"]
+    C["C[  | 90 ]"]
+    D["D[ 12 |  ]"]
+    E["E[ 35 |  ]"]
+    F["F[ 89 | ] "]
+    G["G[  | 100 ]"]
 
     A --> B
     A --> C
