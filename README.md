@@ -46,23 +46,6 @@ Repositorio destinado para guiar a los estudiantes que cursan la materia de Algo
 - Recorridos
 - Ejercicios
 
-## Estado de los temas
-
-| Tema | Teoría | Código | Ejercicios | Pruebas de escritorio |
-|--------|--------|--------|--------|--------|
-| Listas enlazadas | ⏳ | ⏳ | ⏳ | ⏳ |
-| Pilas | ⏳ | ⏳ | ⏳ | ⏳ |
-| Colas | ⏳ | ⏳ | ⏳ | ⏳ |
-| Árbol binario | ⏳ | ⏳ | ⏳ | ⏳ |
-| Árbol 2-3 | ⏳ | ⏳ | ⏳ | ⏳ |
-| Árbol B+ | ⏳ | ⏳ | ⏳ | ⏳ |
-| Hashing | ⏳ | ⏳ | ⏳ | ⏳ |
-| Grafos | ⏳ | ⏳ | ⏳ | ⏳ |
-
-⏳: no empezado
-🚧: en proceso
-✅: terminado
-
 -----------------------------------------------------------------------------------------
 **Importante:**
 > Este repositorio está pensado como ***material complementario*** a las clases y recursos oficiales de la cátedra
